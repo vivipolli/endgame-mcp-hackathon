@@ -122,7 +122,9 @@ document.addEventListener('DOMContentLoaded', function() {
         resultContainer.style.display = 'block';
         resultCard.innerHTML = '<div class="loading">Analyzing...</div>';
 
-        fetch('http://localhost:3000/api/analyze', {
+        const apiUrl = window.location.origin + '/api/analyze';
+
+        fetch(apiUrl, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

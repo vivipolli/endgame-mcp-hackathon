@@ -4,6 +4,47 @@
 
 ToolScan-42 is a specialized Model Context Protocol (MCP) designed to monitor and analyze the public perception of Web3 and blockchain technologies. By tracking social media sentiment, particularly on Twitter, ToolScan-42 provides valuable insights into the current state and trends of various tools, frameworks, and platforms in the blockchain ecosystem.
 
+## Architecture
+
+```
+Client ──────┐
+             │
+             v
+Twitter <──> MCP <──> Analysis
+             │
+             └──────> Client
+```
+
+### Flow Description
+
+1. **Initial Request**
+   - Client submits a Web3 tool/framework name to MCP
+   - Request includes tool name and optional parameters
+   - MCP validates input and prepares for analysis
+
+2. **Twitter Data Collection**
+   - MCP requests Twitter data through MASA API
+   - System collects recent mentions (max 10 tweets)
+   - Data includes tweets, engagement metrics, and timestamps
+   - Handles rate limits and implements retry mechanism
+
+3. **Sentiment Analysis**
+   - MCP sends collected tweets to MASA Analysis API
+   - Analysis includes:
+     - Overall sentiment classification
+     - Key themes and topics
+     - Strengths and concerns
+     - Market impact assessment
+   - Results are structured with clear sections
+
+4. **Response Generation**
+   - MCP formats analysis results with:
+     - Sentiment classification (🚀 trending up, 💤 stable, ⚠️ declining)
+     - Structured insights with markdown formatting
+     - Tweet count and engagement metrics
+     - Alternative suggestions (if applicable)
+   - Returns comprehensive analysis to client
+
 The protocol serves as a crucial decision-making tool for three key stakeholders:
 
 1. **Developers**: Helps identify which technologies are gaining traction and community support, enabling informed choices about which tools to adopt or migrate to.
@@ -133,24 +174,3 @@ async function generateMarketReport(tool: string) {
   return await generateReportWithLLM(sentiment);
 }
 ```
-
-## Standalone MCP Requirements
-
-1. **Environment Setup**
-   - Node.js environment
-   - Required API keys
-   - Environment variables
-
-2. **API Endpoints**
-   - POST `/api/analyze`: Analyze sentiment
-   - WebSocket support for real-time updates
-
-3. **Documentation**
-   - Installation guide
-   - Usage examples
-   - Integration instructions
-
-4. **Video Demonstration**
-   - Setup process
-   - Basic usage
-   - Integration with SN42
