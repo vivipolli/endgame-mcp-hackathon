@@ -1,102 +1,62 @@
-=== Logs started at 2025-04-17T20:28:16.065Z ===
+=== Logs started at 2025-04-23T11:40:42.762Z ===
 Environment info:
 {
   "nodeVersion": "v22.11.0",
   "platform": "linux",
   "arch": "x64",
-  "pid": 983481,
-  "cwd": "/home/vivi/Downloads",
+  "pid": 1247926,
+  "cwd": "/home/vivi/projetos/hackathons/endgame/endgame-mcp-hackathon",
   "execPath": "/home/vivi/.nvm/versions/node/v22.11.0/bin/node",
   "env": {
-    "PATH": "/home/vivi/.local/share/solana/install/active_release/bin:/home/vivi/.local/bin:/home/vivi/.pyenv/shims:/tmp/.mount_CursorHcgkl3/usr/bin:/tmp/.mount_CursorHcgkl3/usr/sbin:/tmp/.mount_CursorHcgkl3/usr/games:/tmp/.mount_CursorHcgkl3/bin:/tmp/.mount_CursorHcgkl3/sbin:/tmp/.mount_CursorTS5oox/usr/bin:/tmp/.mount_CursorTS5oox/usr/sbin:/tmp/.mount_CursorTS5oox/usr/games:/tmp/.mount_CursorTS5oox/bin:/tmp/.mount_CursorTS5oox/sbin:/home/vivi/.pyenv/bin:/home/vivi/anaconda3/bin:/home/vivi/anaconda3/condabin:/home/vivi/.nvm/versions/node/v22.11.0/bin:/home/vivi/.local/share/solana/install/active_release/bin:/home/vivi/.cargo/bin:/home/vivi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/vivi/.foundry/bin:/usr/local/go/bin:/home/vivi/.foundry/bin:/usr/local/go/bin"
+    "PATH": "/home/vivi/projetos/hackathons/endgame/endgame-mcp-hackathon/node_modules/.bin:/home/vivi/projetos/hackathons/endgame/node_modules/.bin:/home/vivi/projetos/hackathons/node_modules/.bin:/home/vivi/projetos/node_modules/.bin:/home/vivi/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/home/vivi/.nvm/versions/node/v22.11.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/home/vivi/.pyenv/shims:/home/vivi/.local/share/solana/install/active_release/bin:/home/vivi/.local/bin:/tmp/.mount_Cursorqddlsc/usr/bin:/tmp/.mount_Cursorqddlsc/usr/sbin:/tmp/.mount_Cursorqddlsc/usr/games:/tmp/.mount_Cursorqddlsc/bin:/tmp/.mount_Cursorqddlsc/sbin:/home/vivi/.pyenv/bin:/home/vivi/anaconda3/bin:/home/vivi/anaconda3/condabin:/home/vivi/.nvm/versions/node/v22.11.0/bin:/home/vivi/.local/share/solana/install/active_release/bin:/home/vivi/.cargo/bin:/home/vivi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/vivi/.foundry/bin:/usr/local/go/bin:/home/vivi/.foundry/bin:/usr/local/go/bin:/home/vivi/.foundry/bin:/usr/local/go/bin"
   }
 }
 
-[2025-04-17T20:28:16.066Z] Starting Web3 technology analysis MCP server
-[2025-04-17T20:28:16.067Z] MCP server started
-[2025-04-17T20:28:44.039Z] Analyzing public perception for Web3 technologies: Ethereum
-[2025-04-17T20:28:44.039Z] Analyzing sentiment for: Ethereum
-[2025-04-17T20:28:44.039Z] Starting sentiment analysis for Ethereum
-[2025-04-17T20:28:44.040Z] Searching tweets for Ethereum
-[2025-04-17T20:29:24.072Z] No tweets found after all attempts
-[2025-04-17T20:29:24.072Z] No tweets to analyze for Ethereum, returning neutral result
-[2025-04-17T20:29:52.253Z] Analyzing public perception for Web3 technologies: Ethereum
-[2025-04-17T20:29:52.254Z] Analyzing sentiment for: Ethereum
-[2025-04-17T20:29:52.254Z] Starting sentiment analysis for Ethereum
-[2025-04-17T20:29:52.254Z] Searching tweets for Ethereum
-[2025-04-17T20:30:01.155Z] Search completed, 10 tweets found
-[2025-04-17T20:30:01.155Z] Returning 10 tweets for analysis
-[2025-04-17T20:30:01.155Z] Found 10 tweets for analysis
-[2025-04-17T20:30:01.156Z] Analyzing 10 tweets about Ethereum
-[2025-04-17T20:30:05.228Z] Analysis completed for Ethereum
-[2025-04-17T20:30:05.229Z] Final classification for Ethereum: 🚀 trending up
-[2025-04-17T21:02:18.055Z] Analyzing public perception for Web3 technologies: Bittensor
-[2025-04-17T21:02:18.058Z] Analyzing sentiment for: Bittensor
-[2025-04-17T21:02:18.058Z] Starting sentiment analysis for Bittensor
-[2025-04-17T21:02:18.058Z] Searching tweets for Bittensor
-[2025-04-17T21:02:34.339Z] Search completed, 10 tweets found
-[2025-04-17T21:02:34.339Z] Returning 10 tweets for analysis
-[2025-04-17T21:02:34.339Z] Found 10 tweets for analysis
-[2025-04-17T21:02:34.339Z] Analyzing 10 tweets about Bittensor
-[2025-04-17T21:02:37.977Z] Analysis completed for Bittensor
-[2025-04-17T21:02:37.977Z] Final classification for Bittensor: 🚀 trending up
-[2025-04-17T21:04:51.413Z] Analyzing public perception for Web3 technologies: Bittensor
-[2025-04-17T21:04:51.414Z] Analyzing sentiment for: Bittensor
-[2025-04-17T21:04:51.414Z] Starting sentiment analysis for Bittensor
-[2025-04-17T21:04:51.414Z] Searching tweets for Bittensor
-[2025-04-17T21:05:07.786Z] Search completed, 10 tweets found
-[2025-04-17T21:05:07.787Z] Returning 10 tweets for analysis
-[2025-04-17T21:05:07.787Z] Found 10 tweets for analysis
-[2025-04-17T21:05:07.787Z] Analyzing 10 tweets about Bittensor
-[2025-04-17T21:05:11.886Z] Analysis completed for Bittensor
-[2025-04-17T21:05:11.886Z] Final classification for Bittensor: 🚀 trending up
-[2025-04-17T21:08:06.941Z] Analyzing public perception for Web3 technologies: Bittensor
-[2025-04-17T21:08:06.941Z] Analyzing sentiment for: Bittensor
-[2025-04-17T21:08:06.941Z] Starting sentiment analysis for Bittensor
-[2025-04-17T21:08:06.941Z] Searching tweets for Bittensor
-[2025-04-17T21:08:23.282Z] Search completed, 10 tweets found
-[2025-04-17T21:08:23.282Z] Returning 10 tweets for analysis
-[2025-04-17T21:08:23.282Z] Found 10 tweets for analysis
-[2025-04-17T21:08:23.282Z] Analyzing 10 tweets about Bittensor
-[2025-04-17T21:08:27.295Z] Analysis completed for Bittensor
-[2025-04-17T21:08:27.295Z] Final classification for Bittensor: 🚀 trending up
-[2025-04-17T21:10:40.763Z] Analyzing public perception for Web3 technologies: Masa
-[2025-04-17T21:10:40.763Z] Analyzing sentiment for: Masa
-[2025-04-17T21:10:40.763Z] Starting sentiment analysis for Masa
-[2025-04-17T21:10:40.763Z] Searching tweets for Masa
-[2025-04-17T21:10:57.494Z] Search completed, 10 tweets found
-[2025-04-17T21:10:57.494Z] Returning 10 tweets for analysis
-[2025-04-17T21:10:57.494Z] Found 10 tweets for analysis
-[2025-04-17T21:10:57.494Z] Analyzing 10 tweets about Masa
-[2025-04-17T21:11:01.800Z] Analysis completed for Masa
-[2025-04-17T21:11:01.800Z] Final classification for Masa: 🚀 trending up
-[2025-04-17T21:12:06.925Z] Analyzing public perception for Web3 technologies: Masa protocols
-[2025-04-17T21:12:06.925Z] Analyzing sentiment for: Masa protocols
-[2025-04-17T21:12:06.925Z] Starting sentiment analysis for Masa protocols
-[2025-04-17T21:12:06.925Z] Searching tweets for Masa protocols
-[2025-04-17T21:12:15.532Z] Search completed, 10 tweets found
-[2025-04-17T21:12:15.533Z] Returning 10 tweets for analysis
-[2025-04-17T21:12:15.533Z] Found 10 tweets for analysis
-[2025-04-17T21:12:15.533Z] Analyzing 10 tweets about Masa protocols
-[2025-04-17T21:12:20.112Z] Analysis completed for Masa protocols
-[2025-04-17T21:12:20.112Z] Final classification for Masa protocols: 🚀 trending up
-[2025-04-17T21:20:47.013Z] Analyzing public perception for Web3 technologies: Bittensor
-[2025-04-17T21:20:47.014Z] Analyzing sentiment for: Bittensor
-[2025-04-17T21:20:47.014Z] Starting sentiment analysis for Bittensor
-[2025-04-17T21:20:47.014Z] Searching tweets for Bittensor
-[2025-04-17T21:20:55.631Z] Search completed, 10 tweets found
-[2025-04-17T21:20:55.631Z] Returning 10 tweets for analysis
-[2025-04-17T21:20:55.631Z] Found 10 tweets for analysis
-[2025-04-17T21:20:55.631Z] Analyzing 10 tweets about Bittensor
-[2025-04-17T21:20:59.400Z] Analysis completed for Bittensor
-[2025-04-17T21:20:59.400Z] Final classification for Bittensor: 🚀 trending up
-[2025-04-17T21:21:45.446Z] Analyzing public perception for Web3 technologies: Ethereum
-[2025-04-17T21:21:45.447Z] Analyzing sentiment for: Ethereum
-[2025-04-17T21:21:45.447Z] Starting sentiment analysis for Ethereum
-[2025-04-17T21:21:45.447Z] Searching tweets for Ethereum
-[2025-04-17T21:21:54.185Z] Search completed, 10 tweets found
-[2025-04-17T21:21:54.185Z] Returning 10 tweets for analysis
-[2025-04-17T21:21:54.185Z] Found 10 tweets for analysis
-[2025-04-17T21:21:54.185Z] Analyzing 10 tweets about Ethereum
-[2025-04-17T21:21:59.714Z] Analysis completed for Ethereum
-[2025-04-17T21:21:59.714Z] Final classification for Ethereum: 🚀 trending up
+[2025-04-23T11:40:48.173Z] Starting sentiment analysis for Bitcoin
+[2025-04-23T11:40:48.173Z] Searching tweets for Bitcoin
+[2025-04-23T11:41:13.276Z] Search completed, 20 tweets found
+[2025-04-23T11:41:13.276Z] Returning 20 tweets for analysis
+[2025-04-23T11:41:13.276Z] Found 20 tweets for analysis
+[2025-04-23T11:41:13.277Z] Analyzing 20 tweets about Bitcoin
+[2025-04-23T11:41:18.633Z] Analysis completed for Bitcoin
+[2025-04-23T11:41:18.633Z] Final classification for Bitcoin: 🚀 trending up
+[2025-04-23T11:43:24.187Z] Starting sentiment analysis for Bitcoin
+[2025-04-23T11:43:24.188Z] Searching tweets for Bitcoin
+[2025-04-23T11:43:41.264Z] Search completed, 20 tweets found
+[2025-04-23T11:43:41.264Z] Returning 20 tweets for analysis
+[2025-04-23T11:43:41.265Z] Found 20 tweets for analysis
+[2025-04-23T11:43:41.265Z] Analyzing 20 tweets about Bitcoin
+[2025-04-23T11:43:46.501Z] Analysis completed for Bitcoin
+[2025-04-23T11:43:46.502Z] Final classification for Bitcoin: 🚀 trending up
+[2025-04-23T11:47:14.757Z] Starting sentiment analysis for Bitcoin
+[2025-04-23T11:47:14.758Z] Searching tweets for Bitcoin
+[2025-04-23T11:47:31.679Z] Search completed, 20 tweets found
+[2025-04-23T11:47:31.679Z] Returning 20 tweets for analysis
+[2025-04-23T11:47:31.679Z] Found 20 tweets for analysis
+[2025-04-23T11:47:31.679Z] Analyzing 20 tweets about Bitcoin
+[2025-04-23T11:47:37.018Z] Analysis completed for Bitcoin
+[2025-04-23T11:47:37.019Z] Final classification for Bitcoin: 🚀 trending up
+[2025-04-23T11:51:18.129Z] Starting sentiment analysis for Bitcoin
+[2025-04-23T11:51:18.129Z] Searching tweets for Bitcoin
+[2025-04-23T11:51:35.389Z] Search completed, 20 tweets found
+[2025-04-23T11:51:35.390Z] Returning 20 tweets for analysis
+[2025-04-23T11:51:35.390Z] Found 20 tweets for analysis
+[2025-04-23T11:51:35.390Z] Analyzing 20 tweets about Bitcoin
+[2025-04-23T11:51:40.817Z] Analysis completed for Bitcoin
+[2025-04-23T11:51:40.817Z] Final classification for Bitcoin: 🚀 trending up
+[2025-04-23T11:52:20.782Z] Starting sentiment analysis for Ethereum
+[2025-04-23T11:52:20.783Z] Searching tweets for Ethereum
+[2025-04-23T11:52:37.956Z] Search completed, 20 tweets found
+[2025-04-23T11:52:37.956Z] Returning 20 tweets for analysis
+[2025-04-23T11:52:37.957Z] Found 20 tweets for analysis
+[2025-04-23T11:52:37.957Z] Analyzing 20 tweets about Ethereum
+[2025-04-23T11:52:43.384Z] Analysis completed for Ethereum
+[2025-04-23T11:52:43.384Z] Final classification for Ethereum: 🚀 trending up
+[2025-04-23T11:54:22.373Z] Starting sentiment analysis for Ethereum
+[2025-04-23T11:54:22.373Z] Searching tweets for Ethereum
+[2025-04-23T11:54:47.287Z] Search completed, 20 tweets found
+[2025-04-23T11:54:47.288Z] Returning 20 tweets for analysis
+[2025-04-23T11:54:47.288Z] Found 20 tweets for analysis
+[2025-04-23T11:54:47.288Z] Analyzing 20 tweets about Ethereum
+[2025-04-23T11:54:52.407Z] Analysis completed for Ethereum
+[2025-04-23T11:54:52.408Z] Final classification for Ethereum: 🚀 trending up

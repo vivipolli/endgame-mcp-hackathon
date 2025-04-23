@@ -1,14 +1,28 @@
+import dotenv from 'dotenv';
 import { categorizeWeb3Tool } from "./utils/tools.js";
 import { getWeb3Alternatives } from "./utils/alternatives.js";
 import { SentimentClass, ToolSentimentResult } from "./types.js";
 import { log } from './logger.js';
 
-const MASA_API_KEY = process.env.MASA_API_KEY as string;
+dotenv.config();
 
+const requiredEnvVars = [
+  'MASA_API_KEY',
+  'MASA_TWITTER_API_URL',
+  'MASA_TWITTER_RESULT_URL',
+  'MASA_ANALYSIS_API_URL'
+];
+
+for (const envVar of requiredEnvVars) {
+  if (!process.env[envVar]) {
+    throw new Error(`Missing required environment variable: ${envVar}`);
+  }
+}
+
+const MASA_API_KEY = process.env.MASA_API_KEY as string;
 const MASA_TWITTER_API_URL = process.env.MASA_TWITTER_API_URL as string;
 const MASA_TWITTER_RESULT_URL = process.env.MASA_TWITTER_RESULT_URL as string;
 const MASA_ANALYSIS_API_URL = process.env.MASA_ANALYSIS_API_URL as string;
-
 
 export async function analyzeWeb3Sentiment(tool: string): Promise<ToolSentimentResult> {
     try {
@@ -79,7 +93,23 @@ export async function analyzeWeb3Sentiment(tool: string): Promise<ToolSentimentR
       
       const requestBody = {
         tweets: tweets,
-        prompt: `Analyze the sentiment of these tweets about ${tool}`
+        prompt: `Analyze the sentiment and provide a comprehensive analysis of these tweets about ${tool}. Consider the following aspects:
+
+            1. Overall Sentiment: Determine if the general sentiment is positive, negative, or neutral, and provide a confidence level.
+
+            2. Key Themes: Identify and analyze the main topics and themes being discussed.
+
+            3. Strengths: List any positive aspects, advantages, or benefits mentioned.
+
+            4. Concerns: Identify any criticisms, risks, or challenges raised.
+
+            5. Market Impact: Analyze any mentions of market performance, adoption, or growth potential.
+
+            6. Technical Analysis: Evaluate any technical discussions or development updates.
+
+            7. Community Sentiment: Assess the level of community engagement and support.
+
+            Provide a detailed analysis that combines quantitative metrics with qualitative insights, highlighting both the opportunities and challenges for ${tool}.`
       };
       
       const response = await fetch(MASA_ANALYSIS_API_URL, {
@@ -126,7 +156,7 @@ export async function analyzeWeb3Sentiment(tool: string): Promise<ToolSentimentR
       
       const requestBody = {
         query: query,
-        max_results: 10
+        max_results: 20
       };
       
       const response = await fetch(MASA_TWITTER_API_URL, {

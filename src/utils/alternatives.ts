@@ -1,6 +1,4 @@
-// Função para sugerir alternativas para tecnologias Web3 com percepção negativa
 export function getWeb3Alternatives(tool: string): string[] {
-    // Mapeamento de tecnologias Web3 para alternativas
     const alternativesMap: Record<string, string[]> = {
       // Blockchains
       'ethereum': ['Solana', 'Avalanche', 'Polygon', 'Arbitrum', 'Optimism'],
@@ -50,13 +48,10 @@ export function getWeb3Alternatives(tool: string): string[] {
       'ipfs': ['Arweave', 'Filecoin', 'Sia', 'Storj'],
       'thirdweb': ['Alchemy', 'Moralis', 'Truffle', 'Hardhat'],
       
-      // Por padrão, sugerir blockchain e ferramentas populares
       'default': ['Ethereum', 'Solana', 'Polygon', 'MetaMask', 'Alchemy']
     };
     
-    // Normalizar o nome da tecnologia
     const normalizedTool = tool.toLowerCase().trim();
     
-    // Retornar alternativas específicas ou padrão
     return alternativesMap[normalizedTool] || alternativesMap['default'];
   }

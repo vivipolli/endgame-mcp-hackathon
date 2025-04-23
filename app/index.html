@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToolScan-42</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>ToolScan-42</h1>
+            <p>Web3 Technology Sentiment Analysis</p>
+        </header>
+
+        <main>
+            <div class="search-container">
+                <input type="text" id="toolInput" placeholder="Enter Web3 technology (e.g., Bittensor, Ethereum)">
+                <button id="analyzeBtn">Analyze</button>
+            </div>
+
+            <div class="result-container" id="resultContainer" style="display: none;">
+                <div class="result-card" id="resultCard">
+                    <div class="result-header">
+                        <h2 id="toolName">-</h2>
+                        <span id="sentiment" class="sentiment">-</span>
+                    </div>
+                    <div class="result-body">
+                        <div class="metric">
+                            <span class="label">Tweets Analyzed</span>
+                            <span id="tweetCount" class="value">-</span>
+                        </div>
+                        <div class="metric">
+                            <span class="label">Category</span>
+                            <span id="category" class="value">-</span>
+                        </div>
+                        <div class="insights">
+                            <h3>Insights</h3>
+                            <p id="insights">-</p>
+                        </div>
+                        <div class="alternatives" id="alternativesContainer" style="display: none;">
+                            <h3>Alternative Suggestions</h3>
+                            <ul id="alternativesList"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
